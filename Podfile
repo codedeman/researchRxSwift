@@ -3,8 +3,10 @@
 
 target 'HelloRxSwift' do
  
-	 pod 'RxSwift', '~> 5'
-    pod 'RxCocoa', '~> 5'
+	pod 'RxSwift', '~> 5'
+    	pod 'RxCocoa', '~> 5'
+	pod 'RxDataSources', '~> 4.0'
+
   target 'HelloRxSwiftTests' do
      pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
