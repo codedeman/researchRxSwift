@@ -17,16 +17,16 @@ Ví  dụ  thực tế  publish  giống như  là vào lớp muộn nhưng ch�
 
 code example
 ```swift
- let subject = PublishSubject<String>()
- 
-        subject.onNext("Emmit 1")
-        
-        subject.subscribe(onNext: { (event) in
-            
-            print("event \(event)")
-            }).disposed(by: disposeBag)
-        
-        subject.onNext("Emmit 2")
+    let subject = PublishSubject<String>()
+
+    subject.onNext("Emmit 1")
+
+    subject.subscribe(onNext: { (event) in
+
+    print("event \(event)")
+    }).disposed(by: disposeBag)
+
+    subject.onNext("Emmit 2")
 ``` 
 Kết quả sẽ là  event Emmit 2
 
@@ -38,16 +38,16 @@ V í dụ thực tế behavior là một thằng vào lớp muộn nhưng muốn
 code example
 
 ```swift
-let subject = BehaviorSubject(value: "")
-subject.onNext("Issue 1")
+    let subject = BehaviorSubject(value: "")
+    subject.onNext("Issue 1")
 
-subject.subscribe(onNext: { (event) in
+    subject.subscribe(onNext: { (event) in
 
     print("event \(event)")
 
-}).disposed(by: disposeBag)
+    }).disposed(by: disposeBag)
 
-subject.onNext("Issue 2")
+    subject.onNext("Issue 2")
 
 ```
 Kêt quả sẽ là 
@@ -99,17 +99,17 @@ event next(Issue #7)
 Example 
 ```swift
 
-let first = Observable.of(1,2,3)
+    let first = Observable.of(1,2,3)
     let second = Observable.of(4,5,6)
- 
-let obserable = Observable.concat([first,second])
-        
-        obserable.subscribe(onNext: { (event) in
-            
-            print("event \(event)")
-                
-        }, onError: nil , onCompleted: nil).dispose()
- 
+
+    let obserable = Observable.concat([first,second])
+
+    obserable.subscribe(onNext: { (event) in
+
+    print("event \(event)")
+
+    }, onError: nil , onCompleted: nil).dispose()
+
 ```
 
 Kết quả sẽ là 1,3,4,5,6
@@ -123,22 +123,22 @@ Có thể kết hợp nhiều output của Observable vì thế nó như một O
  
 Example
 ```swift
-   let left = PublishSubject<Int>()
+    let left = PublishSubject<Int>()
     let right = PublishSubject<Int>()
- 
-let source = Observable.of(left.asObserver(),right.asObserver())
-        let obserable  = source.merge()
-        obserable.subscribe(onNext: { (event) in
-            print(event)
-            }, onError: nil , onCompleted: nil)
-        
-        left.onNext(1)
-        left.onNext(2)
-        left.onNext(3)
-        
-        right.onNext(4)
-        right.onNext(5)
-        right.onNext(6)
+
+    let source = Observable.of(left.asObserver(),right.asObserver())
+    let obserable  = source.merge()
+    obserable.subscribe(onNext: { (event) in
+    print(event)
+    }, onError: nil , onCompleted: nil)
+
+    left.onNext(1)
+    left.onNext(2)
+    left.onNext(3)
+
+    right.onNext(4)
+    right.onNext(5)
+    right.onNext(6)
 ```
  
 ### Start with 
@@ -232,7 +232,6 @@ let source: Observable = Observable<Int>.create { (event) -> Disposable in
  Kết quả lúc này sẽ là event 50 
  
  ### Filtering Operators 
- 
  ### Element at 
   Sẽ lấy một phần tử nằm ở một vị trí xác định trong chuỗi mà bạn muốn nhận được và bỏ qua các thành phần khác 
   
