@@ -3,4 +3,70 @@
    uuid = "A9EBB6AB-A7DB-4DA2-8190-766F35E4A409"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "035F5777-04EB-4393-A5B7-7B66D8154238"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloRxSwift/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D760FBBE-7D26-4DCF-9917-096C32661F38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloRxSwift/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "tranformFlatmapLatest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D760FBBE-7D26-4DCF-9917-096C32661F38 - 2deda28d9ecfa5a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HelloRxSwift.ViewController.tranformFlatmapLatest() -&gt; ()"
+                  moduleName = "HelloRxSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kienpt6/Desktop/IOS/HelloRxSwift/HelloRxSwift/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "761">
+               </Location>
+               <Location
+                  uuid = "D760FBBE-7D26-4DCF-9917-096C32661F38 - 8bec11456fae03c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (()) -&gt; () in HelloRxSwift.ViewController.tranformFlatmapLatest() -&gt; ()"
+                  moduleName = "HelloRxSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kienpt6/Desktop/IOS/HelloRxSwift/HelloRxSwift/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "374">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

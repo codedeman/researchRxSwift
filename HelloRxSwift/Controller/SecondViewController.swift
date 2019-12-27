@@ -52,14 +52,17 @@ class SecondViewController: UIViewController {
     
     func blindingUI(){
         
-            
-       
-        datsource.asObservable().bind(to: collectionView.rx.items(cellIdentifier: "CategoryCell", cellType: CategoryCell.self)){(row,data,cell) in
-            
-            cell.configureCell(user: data)
-            
-//            cell.avatarImage.image = UIImage(named: data.avatar)
-        }.dispose()
+      
+
+               
+        
+        
+//        datsource.asObservable().bind(to: collectionView.rx.items(cellIdentifier: "CategoryCell", cellType: CategoryCell.self)){(row,data,cell) in
+//
+//            cell.configureCell(user: data)
+//
+////            cell.avatarImage.image = UIImage(named: data.avatar)
+//        }.dispose()
 
         
         collectionView.rx.willDisplayCell
